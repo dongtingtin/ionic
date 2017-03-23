@@ -1,0 +1,26 @@
+<ion-view hide-nav-bar="true">
+    <ion-content style="background-image: url(../img/background.jpg);">
+        <div class="row">
+            <div class="col-25 col-offset-25" style="margin-top: 50px;">
+                <img src="../img/t013bc6eb38a4adc35f.jpg" style="display:block;width:100%;width:150px;height:150px;border-radius:100px; ">
+            </div>
+        </div>
+        <div class="list" style="opacity: 0.7;">
+            <label class="item item-input" style="margin-top: 50px;">
+                <span class="input-label"><i class="ion-android-phone-portrait"></i> :</span>
+                <input type="text" placeholder="请输入手机号" ng-model="user.username" ng-blur="checkUsername()">
+             </label>
+            <label class="item item-input">
+                <span class="input-label"><i class="icon ion-locked"></i> :</span>
+                <input type="text" placeholder="请输入密码" ng-model="user.password">
+            </label>
+        </div>
+        <div style="opacity: 0.7;">
+            <botton class="button button-block full button-positive" ng-click="login()">登录</botton>
+        </div>
+        <div class="row">
+            <div class="col-33 text-center"><a href="#/signup">注册</a></div>
+            <div class="col-33 col-offset-33 text-center"><a href="#/forgot-password">忘记密码</a></div>
+        </div>
+    </ion-content>
+</ion-view>

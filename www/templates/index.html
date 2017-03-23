@@ -1,0 +1,172 @@
+<ion-view hide-nav-bar="true">
+    <div class="bar bar-header bar-positive item-input-inset">
+        <button menu-toggle="left" class="button button-icon icon ion-navicon" ng-click="doSomething()"></button>
+        <h1 class="title" ng-hide="myVar">我的主页</h1>
+        <div ng-show="myVar" style="opacity: 0.5">
+            <label class="item-input-wrapper">
+                <i class="icon ion-ios-search placeholder-icon"></i>
+                <input type="search" placeholder="搜配方" style="width: 200px;">
+            </label>
+        </div>
+        <button class="button button-icon icon ion-ios-search-strong pull-right" ng-click="toggle()" ng-hide="myVar"></button>
+        <button class="button pull-right" ng-click="toggle()" ng-show="myVar" style="border-color:rgba(0,0,0,0);font-size:16px;">取消</button>
+    </div>
+
+    <ion-content>
+        <ion-slide-box style="margin-top: 44px;">
+
+            <ion-slide>
+                <div class="box red">
+                    <a href="#/banner2">
+                        <img src="../img/banner2.jpg" alt="" style="height: 170px;"></a>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box blue">
+                    <a href="#/banner1">
+                        <div ng-click="nextSlide()"><img src="../img/banner1.jpg" alt="" style="height: 170px;"></div>
+                    </a>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="box red">
+                    <img src="../img/banner3.jpg" alt="" style="height: 170px;">
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box red">
+                    <img src="../img/banner4.jpg" alt="" style="height: 170px;">
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="box red">
+                    <img src="../img/banner5.jpg" alt="" style="height: 170px;">
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box red">
+                    <img src="../img/banner6.jpg" alt="" style="height: 170px;">
+                </div>
+            </ion-slide>
+        </ion-slide-box>
+
+        <div class="row text-center">
+            <div class="col">
+                <p><i class="ion ion-clipboard"></i></p>
+                <p>智选配方</p>
+            </div>
+            <div class="col">
+                <p><i class="ion ion-ios-pricetags-outline"></i></p>
+                <p>我想做</p>
+            </div>
+            <div class="col">
+                <p><i class="ion ion-ios-heart-outline"></i></p>
+                <p>我做过</p>
+            </div>
+            <div class="col">
+                <p><i class="ion ion-ios-eye"></i></p>
+                <p>最近看过</p>
+            </div>
+        </div>
+        <div class="list card">
+            <div class="row text-center">
+                <div class="col">
+                    <a href="#/cake1">
+                        <div class="item item-image">
+                            <img src="../img/cake1.jpg">
+                        </div>
+                        <p>蛋糕</p>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <div class="item item-image">
+                            <img src="../img/cake2.jpg">
+                        </div>
+                        <p>饼干</p>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <div class="item item-image">
+                            <img src="../img/cake3.jpg">
+                        </div>
+                        <p>面包</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="list card">
+
+            <div class="item item-image">
+                <a href="#/menu1" style="text-decoration: none;">
+                    <img src="../img/name1.jpg"> </a>
+            </div>
+            <div class="row">
+                <a href="#/menu1" style="text-decoration: none;">
+                    <div class="col col-80">
+                        <h3>巧克力布朗尼</h3>
+                        <h5>发现好配方 <i class="ion ion-ios-arrow-right"></i></h5>
+                </a>
+                </div>
+                <div class="col">
+                    <div class="button  icon  ion-ios-heart-outline pull-right" style="background-color: #fff;"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="list card">
+            <div class="item item-image">
+                <a href="#/menu1" style="text-decoration: none;">
+                    <img src="../img/name2.jpg"></a>
+            </div>
+            <div class="row">
+                <a href="#/menu1" style="text-decoration: none;">
+                    <div class="col col-80">
+                        <h3>咸奶油裸蛋糕</h3>
+                        <p>发现好配方 <i class="ion ion-ios-arrow-right"></i></p>
+                </a>
+                </div>
+                <div class="col"> <button class="button  icon  ion-ios-heart-outline pull-right button-positive"></button></div>
+            </div>
+        </div>
+        <div class="list card">
+            <div class="item item-image">
+                <img src="../img/name3.jpg">
+            </div>
+            <div class="row">
+                <div class="col col-80">
+                    <h3>巧克力千层</h3>
+                    <p>发现好配方 <i class="ion ion-ios-arrow-right"></i></p>
+                </div>
+                <div class="col"> <button class="button  icon  ion-ios-heart-outline pull-right button-positive"></button></div>
+            </div>
+        </div>
+        <div class="list card">
+            <div class="item item-image">
+                <img src="../img/name4.jpg">
+            </div>
+            <div class="row">
+                <div class="col col-80">
+                    <h3>抹茶奶油小方</h3>
+                    <p>发现好配方 <i class="ion ion-ios-arrow-right"></i></p>
+                </div>
+                <div class="col"> <button class="button  icon  ion-ios-heart-outline pull-right button-positive"></button></div>
+            </div>
+        </div>
+        <div class="list card">
+            <div class="item item-image">
+                <img src="../img/name5.jpg">
+            </div>
+            <div class="row">
+                <div class="col col-80">
+                    <h3>棒棒糖饼干</h3>
+                    <p>发现好配方 <i class="ion ion-ios-arrow-right"></i></p>
+                </div>
+                <div class="col"> <button class="button  icon  ion-ios-heart-outline pull-right button-positive"></button></div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

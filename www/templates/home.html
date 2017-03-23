@@ -1,0 +1,30 @@
+<ion-side-menus>
+    <!-- 左侧菜单 -->
+    <ion-side-menu side="left">
+        <ion-content style="background:url(http://a2.mzstatic.com/us/r30/Purple/v4/e7/ff/f3/e7fff3c6-a56d-c3f1-c106-fdd0d2ca43f4/screen1136x1136.jpeg);background-size:cover;">
+            <input type="file" accept="image/*" id="chooseImg" hidden onchange="angular.element(this).scope().modifyAvatar(this)">
+            <div>
+                <div class="avatar">
+                    <img src="{{avatar}}" class="img-responsive" style="width:80px;height:80px;border-radius:50%;margin-left:100px;margin-top:50px;" ng-click="showActionSheet()">
+                    <h4 type="isEdit" class="text-center">{{nickname}}<i ng-click="isEdit=true" class="ion ion-edit"></i></h4>
+                    <div ng-show="isEdit">
+                        <input type="text" ng-model="nickname" style="display:inline">
+                        <i class="ion ion-checkmark-circled" ng-click="isEdit=false;changeNickname()"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="list" style="opacity: 0.5;margin-top:50px;">
+                <a class="item" href="#"><i class="ion ion-person"></i> 我的主页</a>
+                <a class="item" href="#"><i class="ion ion-cube"></i> 我的收藏</a>
+                <a class="item" href="#"><i class="ion ion-images"></i> 我的相册</a>
+                <a class="item" href="#"><i class="ion ion-cash"></i> 我的钱包</a>
+                <a class="item" href="#"><i class="ion ion-ios-cart"></i> 我的购物车</a>
+            </div>
+        </ion-content>
+    </ion-side-menu>
+    <!-- 中间内容 -->
+    <ion-side-menu-content>
+        <ion-nav-view name="menuContent">
+        </ion-nav-view>
+    </ion-side-menu-content>
+</ion-side-menus>
